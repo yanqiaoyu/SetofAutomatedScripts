@@ -3,7 +3,7 @@
 @Github: https://github.com/yanqiaoyu?tab=repositories
 @Date: 2020-06-29 13:46:06
 @LastEditors: YanQiaoYu
-@LastEditTime: 2020-06-29 17:53:37
+@LastEditTime: 2020-06-30 08:56:13
 @FilePath: /SetofAutomatedScripts/AutoUpgrade_Selenium/AutoUpgrade.py
 '''
 
@@ -103,7 +103,6 @@ class Upgrade:
 a=Upgrade()
 
 for i in range(100):
-
     try:
         a.Login()
         a.PrepareUpgrade()
