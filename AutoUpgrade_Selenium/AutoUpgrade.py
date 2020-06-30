@@ -3,7 +3,7 @@
 @Github: https://github.com/yanqiaoyu?tab=repositories
 @Date: 2020-06-29 13:46:06
 @LastEditors: YanQiaoYu
-@LastEditTime: 2020-06-30 08:56:13
+@LastEditTime: 2020-06-30 10:19:08
 @FilePath: /SetofAutomatedScripts/AutoUpgrade_Selenium/AutoUpgrade.py
 '''
 
@@ -11,11 +11,7 @@ from pynput import keyboard
 from pynput.keyboard import Key, Controller
 from selenium import webdriver
 import time
-
 from selenium.webdriver.support.select import Select
-
-
-driver = webdriver.Chrome()
 
 class Upgrade:
     '''
@@ -23,10 +19,8 @@ class Upgrade:
     @param {type} 
     @return: 
     '''
-    
-
     def __init__(self):
-        self.driver = driver
+        self.driver = webdriver.Chrome()
         
         self.URL = "http://tplinkdeco.net"
         self.Time2Sleep = 3
