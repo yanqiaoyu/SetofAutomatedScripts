@@ -9,3 +9,6 @@
 Selenium完成页面登陆并跳转至特定功能页面
 
 Pynput完成了在上传固件时Selenium无法控制系统弹窗的问题
+
+### 2.LoginCycle_Selenium
+使用Selenium+Chrom+Pynput完成了在Web端进行循环本地注销登陆的操作

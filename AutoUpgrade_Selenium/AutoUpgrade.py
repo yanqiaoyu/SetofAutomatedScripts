@@ -3,7 +3,7 @@
 @Github: https://github.com/yanqiaoyu?tab=repositories
 @Date: 2020-06-29 13:46:06
 @LastEditors: YanQiaoYu
-@LastEditTime: 2020-06-30 10:19:08
+@LastEditTime: 2020-07-02 13:37:50
 @FilePath: /SetofAutomatedScripts/AutoUpgrade_Selenium/AutoUpgrade.py
 '''
 
@@ -37,9 +37,9 @@ class Upgrade:
     def Login(self):
         self.driver.get("http://tplinkdeco.net")
         time.sleep(self.Time2Sleep)
-        driver.find_element_by_xpath("//*[@id=\"local-login-pwd\"]/div[2]/div[1]/span[2]/input[1]").send_keys("1234567890")
+        self.driver.find_element_by_xpath("//*[@id=\"local-login-pwd\"]/div[2]/div[1]/span[2]/input[1]").send_keys("1234567890")
         time.sleep(self.Time2Sleep)
-        driver.find_element_by_id("local-login-button").click()
+        self.driver.find_element_by_id("local-login-button").click()
         time.sleep(self.Time2Sleep)
     
     '''
@@ -48,13 +48,13 @@ class Upgrade:
     @return: 
     '''
     def PrepareUpgrade(self):
-        driver.find_element_by_xpath("//*[@id=\"main-menu\"]/div/div/ul/li[2]/a/span[1]").click()
+        self.driver.find_element_by_xpath("//*[@id=\"main-menu\"]/div/div/ul/li[2]/a/span[1]").click()
         time.sleep(self.Time2Sleep)
-        driver.find_element_by_xpath("//*[@id=\"navigator\"]/div[1]/div/ul/li[2]/a/span[2]").click()
+        self.driver.find_element_by_xpath("//*[@id=\"navigator\"]/div[1]/div/ul/li[2]/a/span[2]").click()
         time.sleep(self.Time2Sleep)
-        driver.find_element_by_xpath("//*[@id=\"navigator\"]/div[1]/div/ul/li[2]/ul/li[1]/a/span[2]").click()
+        self.driver.find_element_by_xpath("//*[@id=\"navigator\"]/div[1]/div/ul/li[2]/ul/li[1]/a/span[2]").click()
         time.sleep(self.Time2Sleep)
-        driver.find_element_by_xpath("//*[@id=\"manual-upgrade-file\"]/div[2]/div[1]/div[1]/span[2]/label").click()
+        self.driver.find_element_by_xpath("//*[@id=\"manual-upgrade-file\"]/div[2]/div[1]/div[1]/span[2]/label").click()
         time.sleep(self.Time2Sleep)
 
     '''
